@@ -53,6 +53,10 @@ font-size: 75px;
     color: white;
     background-color: #e62444;
     text-decoration:none ;
+
+}
+.button-2 :hover{
+    cursor: pointer;
 }
 .image-1 img{
     width: 500px;
@@ -99,7 +103,7 @@ height: 427px;
 padding-bottom: 100px;
 }
 .container-5 div{
-    margin-left: 12em;
+    margin-left: 1em;
 }
 .logo-1 img{
     width: 478px;
