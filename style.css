@@ -15,12 +15,22 @@ padding-left: 120px;
     padding-top: 10px;
     padding-left: 20px;
 }
+.button {
+    transition: 5s;
+}
+.button :hover{
+    transform: rotate(360deg);
+
+}
 .button-1{
+    display: flex;
     margin-top: -5px;
-    margin-left: 550px;
-    padding:10px 50px;
+    margin-left: 500px;
+    padding:10px 20px;
     color: white;
     background-color: #e62444;
+    border: 1px solid transparent #e62444;
+    transition: transform 2s;
 }
 .containar-2 {
     display: flex;
@@ -60,13 +70,14 @@ font-size: 75px;
         padding-right: 10px;
         margin-top: 50px;
         margin-left: 30px;
-        margin-right: 30px;
+        margin-right: 5px;
         box-shadow: 0px 0px 30px #00000046 ;
 }
 .player img{
-width: 340px;
+width: 330px;
 justify-content: center;
 align-items: center;
+
 }
 
 .container-4{
@@ -88,7 +99,7 @@ height: 427px;
 padding-bottom: 100px;
 }
 .container-5 div{
-    margin-left: 30em;
+    margin-left: 12em;
 }
 .logo-1 img{
     width: 478px;
@@ -97,22 +108,47 @@ padding-bottom: 100px;
 .logo-2{
     padding-left: 180px;
 }
-.logo-2 img {
+.logo-2 img ,i {
     width: 35px;
-    padding-left: 10px;
+    padding-right: 10px;
 }
 footer{
     text-align: center;
     padding-bottom: 100px;
 }
 
-@media only screen and (max-width:688){
-    .containar-1{
+@media only screen and (max-width:688px) {
+    #containar-1{
         width: 100%;
+    } 
+    .containar-1{
+        display: none;
     }
     .containar-2{
-        width: 100%;
+        flex-direction: column;
+
     }
+    .containar-3{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .box-1{
+        flex-direction: column;
+    }
+    .container-4{
+        flex-direction: column;
+    }
+    .box-2 img {
+        width: 500px;
+    }
+    .container-5 div{
+        width: 100%;
+        margin-left: 6em;
+    }
+    .foot{
+        margin-left: 18em;
+    }
+
+
 }
 
 
